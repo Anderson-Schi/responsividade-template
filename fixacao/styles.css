@@ -13,7 +13,7 @@
   }
   
   main {
-    height: 77vh;
+    height: 100vh;
     max-width: 800px;
     display: flex;
     flex-direction: row;
@@ -39,10 +39,35 @@
   }
   
   footer {
-    position: absolute;
-    bottom: 0;
+    position: static;
     background-color: black;
     color: white;
     padding: 20px;
     width: 100%;
+    text-align: center;
   }
+
+  /* celulares */
+@media screen and (min-device-width :0px) and (max-device-width : 801px) {
+
+  header{
+    display: flex;
+    justify-content: center;
+  }
+
+  main{
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 100%;
+    flex-direction: column;
+    padding: 0 2%;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+  }
+  
+}
